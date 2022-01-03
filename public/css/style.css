@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Orelega One', cursive;
+}
+
+body {
+	
+	font-size: 20px;
+  
+background-image: url(https://lh4.googleusercontent.com/proxy/J69LhCB9JgHZG6yCAnsM5e4inn4L_kCa9epp5md6mNX8aGd21AuNZRDyQ903w8c7uRMnvyW7IH_eW4sKjhXhmQDQHuDwyqo25L-v1znT4nkN=w3840-h2160-p-k-no-nd-mv);
+    background-size: 100vw 100vh;
+	background-attachment: fixed;
+	/**(2nd) background-image: linear-gradient(220deg, #e0580d, #ff9800, #ffc107, #ff5722);
+	**/
+	/**(3rd) background-image: linear-gradient(220deg, #b712d4, #ca3dde, #8e24aa, #ce6dde);
+	**/
+    /**(4th cancel)**/
+	/** (5th)background-image: linear-gradient(330deg, #e91e6b, #da4f7e, #fce4ec, #e91e63); **/
+	  
+	/**(6th cancel)**/
+	 /**(7th)background-image: linear-gradient(341deg, #03a9f4, #2196f3, #55e4f7, #0ee1fd);
+    **/
+/**(8th)	background-image: linear-gradient(317deg, #e0f117, #efdf33, #e65100, #efda29); **/
+    font-family: 'Orelega One', cursive;
+	height: 100vh;
+	margin: 20px;
+	text-transform: capitalize;
+}
+
+#logo_name{
+	/**-webkit-text-stroke: 1px blue;
+	-webkit-text-fill-color: transparent;**/
+	background: linear-gradient(to left, #d31fd3, #0b99c4);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	margin-left: 600px;
+	
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1{
+	text-align: center;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	color: var(--dark-color-a);
+	border: 0;
+	font-size: 17px;
+}
+
+
+
+
+.btn:hover{
+	border: 1px solid rgb(138, 189, 209);
+}
+
+
+/* Chat Page */
+
+.chat-container {
+	max-width: 1800px;
+	background: #C9FFBF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.chat-header {
+	background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/**image**/
+#logos{
+	position: absolute;
+    width: 110px;
+	top: 60px;
+	left: 550px;
+	
+	mix-blend-mode: multiply;
+}
+
+.clippy{
+	background: url("https://i.ibb.co/BPjww5j/giphy-2.gif");
+/**	   background: url("https://i.ibb.co/cr1hgsc/giphy-3.gif");**/
+	background-size: cover;
+	background-position: center;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+
+}
+
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+	background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+	font-size: 20px;
+	background-color: #8EC5FC;/**
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);**/
+	padding: 10px;
+	margin-bottom: 20px;
+	
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+	
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+	/**box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);**/
+    
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+	font-family: 'Itim', cursive;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+	font-family: 'Itim', cursive;
+}
+
+.chat-form-container {
+	padding: 20px 30px;
+	font-family: 'Itim', cursive;
+	background-color: var(--dark-color-a);
+}
+
+.chat-form-container form {
+	display: flex;
+	
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+	
+}
+
+/* Join Page */
+.join-container {
+	max-width: 550px;
+	margin: 80px auto;
+	color: white;
+	
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	border-top-left-radius: 5px;
+	
+	border-top-right-radius: 5px;
+}
+
+.join-main {
+	padding: 30px 40px;
+	/**background-image: linear-gradient(220deg, #b712d4, #ca3dde, #8e24aa, #ce6dde);**/
+	/**background-image:linear-gradient(128deg, #69b7eb, #90e8d7, #2280e0, #e1f5fe) ; {blue}**/
+	/**background-image: linear-gradient(276deg, #0dd217 5%, #76e416 25%, #7bdc0a 75%, #1be423 100%);(green)**/
+	background-image: linear-gradient(341deg, #03a9f4 10%, #2196f3 40%, #55e4f7 80%, #0ee1fd 100%);
+	box-shadow: 3px 0px 300px 10px #16c1de, 0px 3px 8px 2px #01579b, inset 2px 2px 4px 1px lightblue;
+	opacity: 0.8;
+	}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}
+
+
+
+.animate__bounceInLeft{
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+}
+
+.animate__bounceInRight{
+	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+}
+
+.fa-snowflake{
+	color: #fff;
+	position:absolute;
+	top: 10px;
+	animation: fall linear forwards;
+}
+
+h4{
+	background: url("https://i.ibb.co/BPjww5j/giphy-2.gif");
+/**	   background: url("https://i.ibb.co/cr1hgsc/giphy-3.gif");**/
+	background-size: cover;
+	background-position: center;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing:2px;
+	font-size: 1.3rem;
+	font-family: 'Original Surfer', cursive;
+
+}
+
+/**#ghosty{
+	position: absolute;
+    width: 100px;
+	height: 70px;
+	top: 75px;
+	left: 50px;
+	z-index: 1;
+	mix-blend-mode:none;
+}
